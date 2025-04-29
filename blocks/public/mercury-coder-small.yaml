@@ -1,5 +1,5 @@
 name: Mercury Coder Small
-version: 1.0.1
+version: 1.0.2
 schema: v1
 
 models:
@@ -12,4 +12,4 @@ models:
       - autocomplete
     defaultCompletionOptions:
       temperature: 0.0
-      stop: ["\n\n", "\n \n", "<|endoftext|>"]
+      stop: ["<|endoftext|>"]
