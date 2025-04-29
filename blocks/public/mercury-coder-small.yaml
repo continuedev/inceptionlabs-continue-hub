@@ -6,7 +6,7 @@ models:
   - name: Mercury Coder Small
     provider: inception
     model: mercury-coder-small
-    apiKey: ${{ inputs.MERCURY_API_KEY }}
+    apiKey: ${{ inputs.INCEPTION_API_KEY }}
     roles:
       - chat
       - autocomplete
