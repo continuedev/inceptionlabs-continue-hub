@@ -1,0 +1,16 @@
+name: Mercury Coder
+version: 1.0.0
+schema: v1
+
+models:
+  - name: Mercury Coder
+    provider: inception
+    model: mercury-coder
+    apiKey: ${{ inputs.INCEPTION_API_KEY }}
+    roles:
+      - chat
+      - autocomplete
+      - edit
+    defaultCompletionOptions:
+      temperature: 0.0
+      stop: ["<|endoftext|>", "<|/code_to_edit|>"]
