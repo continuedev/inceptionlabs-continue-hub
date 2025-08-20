@@ -1,7 +1,6 @@
 name: Mercury Coder
 version: 1.0.0
 schema: v1
-
 models:
   - name: Mercury Coder
     provider: inception
@@ -11,6 +10,11 @@ models:
       - chat
       - autocomplete
       - edit
+    override:
+      capabilities:
+        - next_edit
     defaultCompletionOptions:
-      temperature: 0.0
-      stop: ["<|endoftext|>", "<|/code_to_edit|>"]
+      temperature: 0
+      stop:
+        - <|endoftext|>
+        - <|/code_to_edit|>
