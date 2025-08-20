@@ -1,5 +1,5 @@
 name: Mercury Coder
-version: 1.0.0
+version: 1.0.1
 schema: v1
 models:
   - name: Mercury Coder
