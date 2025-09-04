@@ -1,0 +1,16 @@
+name: Mercury Coder Small
+version: 1.0.4
+schema: v1
+
+models:
+  - name: Mercury Coder Small
+    provider: inception
+    model: mercury-coder-small
+    apiKey: ${{ inputs.INCEPTION_API_KEY }}
+    roles:
+      - chat
+      - autocomplete
+      - edit
+    defaultCompletionOptions:
+      temperature: 0.0
+      stop: ["<|endoftext|>"]
