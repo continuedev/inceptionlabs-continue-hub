@@ -10,7 +10,7 @@ on:
       - .github/workflows/main.yaml
 
 env:
-  OWNER_SLUG: inceptionlabs # <-- TODO
+  OWNER_SLUG: inception # <-- TODO
 
 jobs:
   publish:
