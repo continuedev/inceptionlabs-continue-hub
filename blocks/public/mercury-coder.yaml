@@ -1,5 +1,5 @@
 name: Mercury Coder
-version: 1.0.5
+version: 1.0.6
 schema: v1
 models:
   - name: Mercury Coder
@@ -10,6 +10,7 @@ models:
       - chat
       - autocomplete
       - edit
+      - apply
     capabilities:
       - next_edit
     defaultCompletionOptions:
