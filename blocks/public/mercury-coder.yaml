@@ -1,5 +1,5 @@
 name: Mercury Coder
-version: 1.0.6
+version: 1.0.7
 schema: v1
 models:
   - name: Mercury Coder
@@ -18,3 +18,12 @@ models:
       stop:
         - <|endoftext|>
         - <|/code_to_edit|>
+    promptTemplates:
+      apply: |-
+        <|original_code|>
+        {{{ original_code }}}
+        <|/original_code|>
+
+        <|update_snippet|>
+        {{{ new_code }}}
+        <|/update_snippet|>
